@@ -26,4 +26,4 @@ jobs:
           aws_secret_access_key = ${{ secrets.ERA5_AWS_SECRET_KEY_ID }}
           region = us-east-2
           source_profile = default" > ~/.aws/credentials
-          python run.py
+          python main.py
