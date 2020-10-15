@@ -29,7 +29,7 @@ def main():
     storage_options = {'endpoint_url': 'https://s3.us-east-2.wasabisys.com'}
 
     store = fsspec.get_mapper(bucket,
-                              profile='wasabi',
+                              profile='default',
                               client_kwargs=storage_options)
 
     ds.sel(time=slice('1981-01-01', '1981-01-02')).to_zarr(store, consolidated=True)
@@ -38,5 +38,3 @@ def main():
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     main()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
