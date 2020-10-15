@@ -1,0 +1,32 @@
+name: era5
+channels:
+ - conda-forge
+dependencies:
+ - python=3.8*
+ - pip=20
+ - appmode
+ - dask
+ - dask-jobqueue
+ - fsspec
+ - gcsfs
+ - s3fs
+ - geopandas
+ - docopt
+ - holoviews
+ - cdsapi
+ - hvplot
+ - ipywidgets
+ - ipyleaflet
+ - jupyter-panel-proxy
+ - line_profiler
+ - send2trash
+ - matplotlib-base
+ - numpy
+ - pandas
+ - pydap
+ - panel
+ - tiledb-py
+ - scipy
+ - xarray
+ - zarr
+
