@@ -19,6 +19,7 @@ dependencies:
  - ipyleaflet
  - jupyter-panel-proxy
  - line_profiler
+ - retrying
  - send2trash
  - matplotlib-base
  - numpy
