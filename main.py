@@ -78,7 +78,7 @@ bucket = 's3://era5-atlantic-northeast/zarr/land/test2'
 # Url du serveur contenant le bucket
 client_kwargs = {"endpoint_url": "https://s3.us-east-2.wasabisys.com"}
 store = fsspec.get_mapper(bucket,
-                          profile='wasabi',
+                          profile='default',
                           client_kwargs=client_kwargs)
 
 # Ouverture du zarr vers dataset (xarray)
